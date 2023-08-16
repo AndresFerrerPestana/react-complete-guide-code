@@ -5,12 +5,12 @@ import imageMeals from '../../assets/meals.jpg';
 
 import HeaderCartButton from './HeaderCartButton';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       <header className={styles['header']}>
         <h1>ReactMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={styles['main-image']}>
         <img src={imageMeals} alt="A table with a lot of food" />
