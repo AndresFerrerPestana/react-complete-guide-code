@@ -12,13 +12,14 @@ const MealItem = (props) => {
 
   return (
     <li className={styles['meal']}>
-      <div>
+      <div id={props.id} key={props.id}>
         {/* First Alternative */}
         {/* <h3>{props.meal.name}</h3>
         <div className={styles['description']}>{props.meal.description}</div>
         <div className={styles['price']}>{props.meal.price}</div> */}
 
         {/* 2nd Alternative */}
+
         <h3>{props.name}</h3>
         <div className={styles['description']}>{props.description}</div>
         <div className={styles['price']}>{price}</div>
