@@ -40,6 +40,7 @@ const AvailableMeals = () => {
 
       // 2nd Alternative
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}
